@@ -1,0 +1,27 @@
+package com.sergiorosaproject.domain;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
+public class User {
+	private Long id;
+	private String name;
+	private String email;
+	private String password;
+
+	private List<Request> requests = new ArrayList<>();
+
+	public User() {
+
+	}
+
+
+	public Long getId() {
+		return id;
+	}
+
+}

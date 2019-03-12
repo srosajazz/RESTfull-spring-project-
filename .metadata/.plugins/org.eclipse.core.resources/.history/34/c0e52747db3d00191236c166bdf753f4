@@ -1,0 +1,18 @@
+package com.sergiorosaproject.domain;
+
+import java.util.Date;
+import java.util.List;
+
+import com.sergiorosaproject.domain.enums.RequestState;
+
+public class Request {
+	private Long id;
+	private String subject;
+	private String description;
+	private Date creation;
+	
+	private RequestState state;
+	private User user;
+	
+	private  List<RequestStage> stages = new ArrayList<RequestStage>();
+}

@@ -1,0 +1,5 @@
+package com.sergiorosaproject.domain;
+
+public class User {
+
+}
